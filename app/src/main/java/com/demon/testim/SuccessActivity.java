@@ -1,11 +1,13 @@
 package com.demon.testim;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import io.rong.imkit.RongIM;
+import io.rong.imlib.model.UserInfo;
 
 public class SuccessActivity extends AppCompatActivity {
 
@@ -19,7 +21,6 @@ public class SuccessActivity extends AppCompatActivity {
 
         btn1 = (Button) findViewById(R.id.btn_chat1);
         btn2 = (Button) findViewById(R.id.btn_chat2);
-
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

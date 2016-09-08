@@ -102,8 +102,6 @@ public class MainActivity extends AppCompatActivity implements RongIM.UserInfoPr
 
             }
         });
-
-
     }
 
 
