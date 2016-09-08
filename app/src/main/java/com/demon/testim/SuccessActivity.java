@@ -26,6 +26,7 @@ public class SuccessActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (RongIM.getInstance() != null)
+                    RongIM.getInstance().setMessageAttachedUserInfo(true);
                     RongIM.getInstance().startPrivateChat(SuccessActivity.this, "10000", "与电信聊天");
             }
         });
@@ -34,6 +35,7 @@ public class SuccessActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (RongIM.getInstance() != null)
+                    RongIM.getInstance().setMessageAttachedUserInfo(true);
                     RongIM.getInstance().startPrivateChat(SuccessActivity.this, "10086", "与移动聊天");
             }
         });

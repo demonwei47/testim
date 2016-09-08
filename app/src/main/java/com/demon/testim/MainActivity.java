@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity implements RongIM.UserInfoPr
                     @Override
                     public void onSuccess(String id) {
                         Logger.e("移动 onSuccess1 id "+id);
-                        RongIM.setUserInfoProvider(MainActivity.this, true);
+                        //RongIM.setUserInfoProvider(MainActivity.this, true);
+                        RongIM.getInstance().setCurrentUserInfo(new UserInfo(id1,name1,Uri.parse(url1)));
                         startActivity(new Intent(MainActivity.this,SuccessActivity.class));
                     }
 
@@ -80,7 +81,8 @@ public class MainActivity extends AppCompatActivity implements RongIM.UserInfoPr
                     @Override
                     public void onSuccess(String id) {
                         Logger.e("onSuccess2 id "+id);
-                        RongIM.setUserInfoProvider(MainActivity.this, true);
+                        //RongIM.setUserInfoProvider(MainActivity.this, true);
+                        RongIM.getInstance().setCurrentUserInfo(new UserInfo(id2,name2,Uri.parse(url2)));
                         startActivity(new Intent(MainActivity.this,SuccessActivity.class));
                     }
 
